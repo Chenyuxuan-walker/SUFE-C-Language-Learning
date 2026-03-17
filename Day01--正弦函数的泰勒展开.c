@@ -24,6 +24,19 @@ int main()
         sum = sum + term;//累加求和
         sign = sign*(-1);
     }
-    printf("你手写的泰勒级数计算结果：sin(%lf)=%lf",x,sum);
+    printf("你手写的泰勒级数计算结果：sin(%lf)=%lf\n",x,sum);
+    double y;
+    sum = 0.0 ;
+    sign = 1;
+    printf("请输入你的cos（y）值（弧度制）：");
+    scanf("%lf",&y);
+    for(int i=1; i<=10; i++)
+    {
+        int n=2*(i-1);
+        double term = sign*pow(y,n)/getFactorial(n);
+        sum = sum + term ;
+        sign = -sign ;
+    }
+    printf("你手写的泰勒级数计算结果：cos（%lf)=%lf\n",y,sum);
     return 0;
 }
