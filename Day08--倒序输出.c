@@ -17,6 +17,5 @@ int main(void)
     for(index = strlen(ch); index >=0; index--)
         printf("%c", ch[index]);				//倒序输出内容
     printf("\n");
-
     return 0;
 }
