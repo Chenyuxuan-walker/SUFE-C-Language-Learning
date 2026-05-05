@@ -29,7 +29,7 @@ int main()
     {
         if(!(i%10))
         {
-            printf("\n")
+            printf("\n") ;
         }
         printf("%5.2f",a[i]);
     }
